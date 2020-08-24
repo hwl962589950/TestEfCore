@@ -26,6 +26,11 @@ namespace TestEfCore
 				//	dbcontext.Add(student);
 				//}
 				//dbcontext.SaveChanges();
+				var students = dbcontext.Students.ToList();
+				foreach (var item in students)
+				{
+					Console.WriteLine(item.StudnetName);
+				}
 			}
 			Console.WriteLine("Hello World!");
 		}
