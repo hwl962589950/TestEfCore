@@ -7,8 +7,9 @@ namespace TestEfCore.Model
 	public class Student
 	{
 		public int Id { get; set; }
-		public string StudnetName { get; set; }
+		public string StudentName { get; set; }
 		public int StudentAge { get; set; }
-		public string StudentPhone { get; set; }
+		public string TelePhone { get; set; }
+        public string Email { get; set; }
 	}
 }
