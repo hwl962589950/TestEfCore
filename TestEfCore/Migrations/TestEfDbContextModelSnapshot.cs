@@ -25,16 +25,13 @@ namespace TestEfCore.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("StudentAge")
                         .HasColumnType("int");
 
-                    b.Property<string>("StudentName")
+                    b.Property<string>("StudentPhone")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TelePhone")
+                    b.Property<string>("StudnetName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
