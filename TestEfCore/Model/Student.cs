@@ -10,5 +10,7 @@ namespace TestEfCore.Model
 		public string StudnetName { get; set; }
 		public int StudentAge { get; set; }
 		public string StudentPhone { get; set; }
+		public string TestStudent { get; set; }
+		public string AddStudentProp { get; set; }
 	}
 }
