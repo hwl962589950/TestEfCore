@@ -29,7 +29,7 @@ namespace TestEfCore
 				var students = dbcontext.Students.ToList();
 				foreach (var item in students)
 				{
-					Console.WriteLine(item.StudnetName);
+					Console.WriteLine(item.StudentName);
 				}
 			}
 			Console.WriteLine("Hello World!");
