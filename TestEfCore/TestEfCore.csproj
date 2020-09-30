@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RazorCompileOnBuild>false</RazorCompileOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +11,14 @@
     <Compile Remove="Migrations\20200824073729_EditStudent.Designer.cs" />
     <Compile Remove="Migrations\20200824075007_EdidStudent2.cs" />
     <Compile Remove="Migrations\20200824075007_EdidStudent2.Designer.cs" />
+    <Compile Remove="Migrations\20200914033117_RemoveTelephone.cs" />
+    <Compile Remove="Migrations\20200914033117_RemoveTelephone.Designer.cs" />
+    <Compile Remove="Migrations\20200914044720_RemoveTeltPhone.cs" />
+    <Compile Remove="Migrations\20200914044720_RemoveTeltPhone.Designer.cs" />
+    <Compile Remove="Migrations\20200914061116_RemoveTeltPhone.cs" />
+    <Compile Remove="Migrations\20200914061116_RemoveTeltPhone.Designer.cs" />
+    <Compile Remove="Migrations\20200914061406_Init.cs" />
+    <Compile Remove="Migrations\20200914061406_Init.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

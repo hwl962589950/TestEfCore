@@ -9,8 +9,8 @@ using TestEfCore;
 namespace TestEfCore.Migrations
 {
     [DbContext(typeof(TestEfDbContext))]
-    [Migration("20200824075041_EdidStudent2")]
-    partial class EdidStudent2
+    [Migration("20200930010624_AddTest")]
+    partial class AddTest
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,13 +39,15 @@ namespace TestEfCore.Migrations
                     b.Property<string>("StudentName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("TelePhone")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
 
                     b.Property<string>("TestStudent")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TestId");
 
                     b.ToTable("Students");
                 });
@@ -63,6 +65,15 @@ namespace TestEfCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Tests");
+                });
+
+            modelBuilder.Entity("TestEfCore.Model.Student", b =>
+                {
+                    b.HasOne("TestEfCore.Model.Test", "Test")
+                        .WithMany()
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

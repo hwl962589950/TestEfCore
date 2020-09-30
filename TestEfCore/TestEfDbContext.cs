@@ -20,7 +20,7 @@ namespace TestEfCore
 		{
 			if (!optionsBuilder.IsConfigured)
 			{
-				optionsBuilder.UseSqlServer("data source=192.168.0.113;initial catalog=TestDbEfCore1;persist security info=True;user id=sa;password=123456;MultipleActiveResultSets=True;App=EntityFramework");
+				optionsBuilder.UseSqlServer("data source=192.168.0.113;initial catalog=TestDbEfCoreReleage1;persist security info=True;user id=sa;password=123456;MultipleActiveResultSets=True;App=EntityFramework");
 			}
 		}
 		public DbSet<Test> Tests { get; set; }
